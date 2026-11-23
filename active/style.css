@@ -1,0 +1,101 @@
+.container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 200px;
+
+    width: 200px;
+    height: 350px;
+
+}
+
+.card , .t1, .t2, .t3{
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    background-color: steelblue;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s ease;
+
+    
+    
+}
+
+.t1 {
+    opacity: 0.5;
+}
+.t2 {
+    opacity: 0.5;
+}
+.t3 {
+    opacity: 0.5;
+}
+ 
+ 
+
+ 
+.container:hover {
+    
+    .t1{
+        transform: translate(-160px, -50px);
+        background-color: green;
+    }
+    .t2 {
+        transform: translate(160px, -50px);
+        background-color: green;
+    }
+    .t3 {
+        transform: translate(-10px, -50px);
+        background-color: green;
+    }
+
+ 
+    .t1.active {
+  background-color: aliceblue;
+    transform: scale(2.1) rotate(0deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    z-index: 10;
+
+     
+}
+
+.t1.active ~ .t2{
+        transform: translate(220px, 0px);
+}
+
+.t1.active ~ .t3 {
+    transform: translate(-220px, 0px);
+}
+
+ 
+.t2.active {
+  background-color: aliceblue;
+    transform: scale(2.1) rotate(0deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    z-index: 10;
+}
+
+.t2.active ~ .t3{
+        transform: translate(220px, 0px);
+}
+
+.t2.active ~ .t1 {
+    transform: translate(-220px, 0px);
+}
+
+.t3.active {
+  background-color: aliceblue;
+    transform: scale(2.1) rotate(0deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .3);
+    z-index: 10;
+}
+
+.t3.active ~ .t1{
+        transform: translate(220px, 0px);
+}
+
+.t3.active ~ .t2 {
+    transform: translate(-220px, 0px);
+}
+}
+
+ 
