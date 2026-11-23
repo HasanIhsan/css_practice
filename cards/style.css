@@ -1,0 +1,107 @@
+.container {
+    position: relative;
+    margin:0 auto;
+    margin-top: 100px;
+    
+    width: 200px;
+    height: 250px;
+}
+
+.card, .t1, .t2, .t3, .t4, .t5{
+
+    position: absolute; 
+    text-align: center;
+    background-color: aqua; 
+    border-style: dotted;
+    width: 200px;
+    height: 250px;
+    border: 2px solid rebeccapurple;
+     opacity: 0.5;
+
+} 
+
+.t1 {
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: khaki;
+    opacity: 0.3;
+    margin:0 auto;
+    margin-top: 100px;
+}
+.t2 {
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    background-color: red;
+    opacity: 0.3;
+    margin:0 auto;
+    margin-top: 100px;
+}
+.t3{
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    background-color: orange;
+    opacity: 0.3;
+    margin:0 auto;
+    margin-top: 100px;
+}
+.t4 {
+    top: 0;
+    left: 0;
+    z-index: 4;
+
+    background-color: green;
+    opacity: 0.3;
+    margin:0 auto;
+    margin-top: 100px;
+}
+.t5 {
+    top: 0;
+    left: 0;
+    z-index: 5;
+
+    background-color: blue;
+    opacity: 0.3;
+    margin:0 auto;
+    margin-top: 100px;
+}
+
+
+ 
+
+.container:hover{
+
+    .t1 {
+    transform: translate(-150px, -50px) rotate(-25deg);
+    transition: transform 0.3s ease;
+      
+    }
+    .t2 {
+        transform: translate(-100px, -90px) rotate(-8deg);
+       transition: transform 0.3s ease;
+    }
+    
+    .t3 {
+        transform: translate(-20px, -120px) rotate(0deg);
+         transition: transform 0.3s ease;
+    }
+    
+    .t4 {
+        transform: translate(100px, -90px) rotate(8deg);
+       transition: transform 0.3s ease;
+    }
+    
+    .t5 {
+        transform: translate(150px, -50px) rotate(25deg);
+       transition: transform 0.3s ease;
+    }
+   
+    
+}
+
+ 
